@@ -83,6 +83,21 @@ class InformalParserInterface:
         # extract text from the currently loaded file.
         pass
 
+class IVehicle:
+    @abstractmethod
+    def move(self):
+        pass
+
+class Vehicle(IVehicle):
+    def __init__(self, brand: str, model: str):
+        self.brand = brand
+        self.model = model
+    
+
+class Car():
+    def __init__(self, ) -> None:
+        super().__init__()
+
 
 #---------------------
 
