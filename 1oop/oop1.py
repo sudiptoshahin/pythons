@@ -1,5 +1,8 @@
 
 
+from abc import abstractmethod
+
+
 class Person:
     def __init__(self, fname, lname, age=30):
         self.fname = fname
@@ -94,9 +97,9 @@ class Vehicle(IVehicle):
         self.model = model
     
 
-class Car():
-    def __init__(self, ) -> None:
-        super().__init__()
+# class Car():
+#     def __init__(self, ) -> None:
+#         super().__init__()
 
 
 #---------------------

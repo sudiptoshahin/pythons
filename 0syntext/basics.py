@@ -193,6 +193,38 @@ myiter = iter(myclass)
 
 """
 
+"""
+# JSON
+-----------------------
+* JSON is JavaScript Object Notations
+* When we convert JSON to python it returns dict
+* When we convert python object to JSON it returns a simple string
+
+PyObject --> JSON
+-------------------
+* dict ----> Object
+* list --> Array
+* tuple --> Array
+* str --> String
+* int --> Number
+* float --> Number
+* True --> true
+* False --> false
+* None --> null
+"""
+
+"""
+# Try Except
+-----------------
+* try block test a block of code for errors.
+* except block handle the rror
+* else block execute code when there is no error
+* finally block execute code regardless of the result of 
+  the try-and-except block
+
+
+"""
+
 # Strings common methods
 #---------------------------
 msg = "Hello, World"
@@ -317,3 +349,16 @@ def show_younget_child(*allChilds):
 
 show_younget_child("childs1", "child2", "child3", "allChilds")
 # print(childs)
+
+# JSON
+# --------------------------
+import json
+
+x = '{ "name":"John", "age":30, "city":"New York"}'
+# parse json
+x_json = json.loads(x) # returns a dict
+print(type(x_json))
+
+# python to json
+py_json = json.dumps(x_json) # json is string type
+print(type(py_json))
