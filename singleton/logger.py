@@ -4,7 +4,12 @@ class Logger(object):
     _instance = None
     _file_name = None
 
-    def __new__(cls) -> None:
+    """
+        * __new__ is called before __init__ 
+        * __new__  is a static method and creating new instance
+        * __init__ is initializes the instance after it is created
+    """
+    def __new__(cls):
         if cls._instance is None:
             cls._instance = super(Logger, cls).__new__(cls)
         return cls._instance
