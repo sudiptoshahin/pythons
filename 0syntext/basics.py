@@ -1,5 +1,12 @@
 
 """
+# VARIABLES
+----------------
+The Python variables are essentially pointers to addresses in memory
+where the relevant values are stored.
+"""
+
+"""
 # Python datatypes
 ---------------------------
 # str -> string
