@@ -23,3 +23,5 @@ if __name__ == "__main__":
     barracks = Barracks()
     kn1 = barracks.generate_knight()
     print(f"[knight1]: {kn1}")
+
+    print('------testing-----------')
